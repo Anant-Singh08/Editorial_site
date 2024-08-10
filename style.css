@@ -1,0 +1,116 @@
+body { 
+    /* background-color: black; */
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0px 50px ;
+    width: 90%;
+    
+}
+
+.current-edition .text{
+    flex: 1;
+}
+
+.current-edition img {
+    max-height: 100%;
+    width: 120%;
+    /* width: auto; */
+}
+
+.text {
+    /* background: linear-gradient(to bottom, #c8ebff, #c7bbe2); */
+    background: linear-gradient(135deg, #0a2833, #1f4c57, #318080, #2e6271);
+    /* background: linear-gradient(135deg, #15424f, #356d7a, #499a9b, #4a7d8a); */
+    padding: 70px;
+    margin-top: 44px;
+    margin-bottom: 45px;
+    /* padding:  50px 0px; */
+    color: white;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+p{
+    max-width: 600px;
+    text-align: justify;
+}
+
+.t1{
+    border-bottom: 2px;
+}
+
+.align.button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+
+button {
+    /* background: linear-gradient(to bottom, #8ad1fb, #814dfb);  Gradient background  */
+    /* background: linear-gradient(135deg, #64c8fa, #9ae7ff); */
+    /* color: black; Solid text color */
+    background: #183538;
+    color: #ffffff;
+    font-weight: bold;
+    max-width: 100%;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* margin: 0 150px; */
+}
+
+
+button:hover {
+    /* background-color: #005a9e; */
+    transform: scale(1.02);
+
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+/* yahan se body hai */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+ @media (max-width: 750px) {
+    #background-video {
+       display: none;
+    } 
+    body {
+       background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+       background-size: cover;
+    }
+ }
